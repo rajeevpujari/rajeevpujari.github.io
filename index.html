@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Rajeev Pujari — Full-Stack Web Developer specializing in WordPress, Magento, Shopify, Laravel, API integration, databases, SEO and performance optimization.">
+<title>Rajeev Pujari | Full-Stack Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07080b;--panel:#101217;--panel2:#151820;--text:#f6f7fb;--muted:#a4a8b4;--line:#252a35;--accent:#9eff00;--accent2:#7c5cff;--max:1180px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}.container{width:min(92%,var(--max));margin:auto}
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(7,8,11,.78);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}
+.navin{height:74px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:"Space Grotesk";font-weight:700;font-size:20px}.logo span{color:var(--accent)}
+.links{display:flex;gap:28px;color:#c9ccd4;font-size:14px}.links a:hover{color:var(--accent)}
+.navbtn,.hero-btn{display:inline-flex;align-items:center;gap:8px;padding:11px 17px;border:1px solid var(--accent);color:#0b0d0a;background:var(--accent);border-radius:999px;font-weight:700;font-size:13px}
+.hero{padding:170px 0 90px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:600px;height:600px;right:-180px;top:80px;background:radial-gradient(circle,rgba(124,92,255,.24),transparent 65%);filter:blur(20px)}
+.eyebrow{display:inline-flex;padding:7px 12px;border:1px solid #303542;border-radius:999px;color:#cfd2da;font-size:12px;margin-bottom:25px}
+.eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block;margin:5px 8px 0 0}
+h1{font-family:"Space Grotesk";font-size:clamp(48px,7.5vw,88px);line-height:.98;letter-spacing:-4px;max-width:950px}
+.gradient{background:linear-gradient(100deg,#fff 30%,#9d8bff 65%,#9eff00);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:690px;color:var(--muted);font-size:18px;margin:28px 0 34px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}.hero-btn.alt{background:transparent;color:#fff;border-color:#343945}.hero-btn.alt:hover{border-color:var(--accent)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:70px;border-radius:18px;overflow:hidden}
+.stat{background:var(--panel);padding:23px}.stat b{font:700 28px "Space Grotesk";display:block}.stat span{color:var(--muted);font-size:12px}
+section{padding:95px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:42px}.kicker{color:var(--accent);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase}.section-head h2{font:700 clamp(34px,5vw,56px) "Space Grotesk";letter-spacing:-2px;margin-top:8px}.section-head p{color:var(--muted);max-width:430px}
+.about{display:grid;grid-template-columns:1.05fr .95fr;gap:50px}.about-copy p{color:#b8bbc4;margin-bottom:18px;font-size:16px}.about-card{background:linear-gradient(145deg,#151820,#0d0f14);border:1px solid var(--line);border-radius:24px;padding:30px;position:relative;overflow:hidden}.about-card:after{content:"</>";position:absolute;right:-8px;bottom:-35px;font:700 160px "Space Grotesk";color:rgba(255,255,255,.035)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:25px}.chip{border:1px solid #303541;padding:8px 12px;border-radius:999px;color:#d4d7df;font-size:12px;background:#0d0f14}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{padding:28px;border:1px solid var(--line);background:var(--panel);border-radius:20px;transition:.25s}.service:hover{transform:translateY(-5px);border-color:#454b58}.num{font:600 12px "Space Grotesk";color:var(--accent)}.service h3{font:600 21px "Space Grotesk";margin:20px 0 9px}.service p{color:var(--muted);font-size:14px}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--panel)}.project img{width:100%;height:210px;object-fit:cover;display:block;filter:saturate(.85)}.project-body{padding:22px}.tag{display:inline-block;color:#bfc3cd;font-size:11px;border:1px solid #303541;border-radius:999px;padding:5px 9px;margin-bottom:12px}.project h3{font:600 21px "Space Grotesk";margin-bottom:7px}.project p{color:var(--muted);font-size:13px}.project a{display:inline-block;margin-top:15px;color:var(--accent);font-size:13px;font-weight:700}
+.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.quote{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:27px;display:flex;flex-direction:column;min-height:290px}.stars{letter-spacing:3px;color:#ffd85c;font-size:15px}.quote p{color:#d4d6dd;font-size:14px;margin:20px 0;flex:1}.person{border-top:1px solid var(--line);padding-top:16px}.person b{display:block;font-family:"Space Grotesk"}.person span{color:var(--muted);font-size:12px}.role{color:var(--accent)!important}
+.contact{border:1px solid var(--line);border-radius:28px;padding:55px;background:radial-gradient(circle at 80% 20%,rgba(124,92,255,.18),transparent 35%),#101217;display:grid;grid-template-columns:1.1fr .9fr;gap:40px}.contact h2{font:700 clamp(38px,5vw,62px) "Space Grotesk";letter-spacing:-2px}.contact p{color:var(--muted);margin-top:15px;max-width:530px}.contact-list{display:grid;gap:12px}.contact-item{border:1px solid var(--line);padding:16px 18px;border-radius:14px;background:rgba(0,0,0,.16)}.contact-item small{color:#777d8a;display:block;font-size:10px;text-transform:uppercase;letter-spacing:1.5px}.contact-item a{font-size:14px;word-break:break-word}
+footer{border-top:1px solid var(--line);padding:25px 0;color:#777d8a;font-size:12px;display:flex;justify-content:space-between;gap:15px}
+@media(max-width:850px){.links{display:none}.stats{grid-template-columns:repeat(2,1fr)}.about,.contact{grid-template-columns:1fr}.services,.projects,.testimonials{grid-template-columns:1fr}.hero{padding-top:135px}h1{letter-spacing:-2px}.section-head{display:block}.section-head p{margin-top:15px}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="container navin">
+<a class="logo" href="#">Rajeev<span>.</span></a>
+<div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Work</a><a href="#testimonials">Testimonials</a><a href="#contact">Contact</a></div>
+<a class="navbtn" href="#contact">Let's Talk ↗</a>
+</div></nav>
+
+<header class="hero"><div class="container">
+<div class="eyebrow"><i></i> Available for freelance & project work</div>
+<h1>Full-Stack Web Developer<br><span class="gradient">building digital experiences.</span></h1>
+<p>I’m Rajeev Pujari — a results-driven developer with 7+ years of hands-on experience creating, customizing and optimizing high-performance websites and eCommerce platforms.</p>
+<div class="btns"><a class="hero-btn" href="#projects">View My Work ↗</a><a class="hero-btn alt" href="#contact">Get In Touch</a></div>
+<div class="stats">
+<div class="stat"><b>7+</b><span>Years Experience</span></div><div class="stat"><b>4+</b><span>Core Platforms</span></div><div class="stat"><b>100%</b><span>Client Focused</span></div><div class="stat"><b>24/7</b><span>Issue Support Mindset</span></div>
+</div>
+</div></header>
+
+<section id="about"><div class="container"><div class="section-head"><div><div class="kicker">01 — About</div><h2>Code with purpose.</h2></div><p>Practical solutions, clean execution and a focus on performance, reliability and long-term value.</p></div>
+<div class="about"><div class="about-copy">
+<p>I’m Rajeev Pujari, a professional Web Developer with 7+ years of hands-on experience in website development, eCommerce solutions, API integration, database management, performance optimization, SEO and digital marketing.</p>
+<p>Over the years, I’ve worked across WordPress, Magento, Shopify, Laravel, PHP and modern web technologies, helping businesses build and improve their online presence.</p>
+<p>Whether it’s developing a website from scratch, customizing an existing platform, fixing complex issues, improving speed, integrating APIs or working with databases, I focus on clean, practical and scalable solutions.</p>
+<p>I believe in quality work, clear communication, timely delivery and long-term client relationships.</p>
+<div class="chips"><span class="chip">WordPress</span><span class="chip">Magento</span><span class="chip">Shopify</span><span class="chip">Laravel</span><span class="chip">PHP</span><span class="chip">API Integration</span><span class="chip">Databases</span><span class="chip">SEO</span></div>
+</div><div class="about-card"><div class="kicker">What I bring</div><h3 style="font:600 30px Space Grotesk;margin:16px 0">From idea to a reliable, scalable website.</h3><p style="color:var(--muted);font-size:14px">Development, customization, troubleshooting and optimization — with a business-first approach.</p></div></div>
+</div></section>
+
+<section id="services"><div class="container"><div class="section-head"><div><div class="kicker">02 — Services</div><h2>What I can do.</h2></div><p>End-to-end web solutions tailored to your platform, goals and business requirements.</p></div>
+<div class="services">
+<div class="service"><span class="num">01</span><h3>Website Development</h3><p>Modern, responsive and conversion-focused websites built around your business needs.</p></div>
+<div class="service"><span class="num">02</span><h3>eCommerce Development</h3><p>Magento, Shopify and WordPress-based eCommerce development, customization and support.</p></div>
+<div class="service"><span class="num">03</span><h3>API Integration</h3><p>Connect websites and platforms with third-party services, tools and custom APIs.</p></div>
+<div class="service"><span class="num">04</span><h3>Performance & Bug Fixing</h3><p>Diagnose issues, improve loading speed and resolve difficult website problems.</p></div>
+<div class="service"><span class="num">05</span><h3>Database Solutions</h3><p>Database development, management, optimization and data-focused web solutions.</p></div>
+<div class="service"><span class="num">06</span><h3>SEO & Digital Marketing</h3><p>Technical SEO and digital marketing support to help businesses improve their online visibility.</p></div>
+</div></div></section>
+
+<section id="projects"><div class="container"><div class="section-head"><div><div class="kicker">03 — Selected Work</div><h2>Projects that matter.</h2></div><p>Your real client projects can be added here with screenshots, results and live links.</p></div>
+<div class="projects">
+<div class="project"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1000&q=80" alt="eCommerce project"><div class="project-body"><span class="tag">Magento</span><h3>BetterCareMarket</h3><p>Magento eCommerce performance optimization and ongoing development support.</p><a href="#contact">Project details →</a></div></div>
+<div class="project"><img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1000&q=80" alt="Shopify project"><div class="project-body"><span class="tag">Shopify</span><h3>Sturdy Sports</h3><p>Shopify website development focused on a smooth and reliable customer experience.</p><a href="#contact">Project details →</a></div></div>
+<div class="project"><img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1000&q=80" alt="WordPress project"><div class="project-body"><span class="tag">WordPress</span><h3>TBVA</h3><p>WordPress site customization with attention to quality, detail and timely delivery.</p><a href="#contact">Project details →</a></div></div>
+</div></div></section>
+
+<section id="testimonials"><div class="container"><div class="section-head"><div><div class="kicker">04 — Testimonials</div><h2>Trusted by clients.</h2></div><p>Real feedback from people I’ve worked with across web development projects.</p></div>
+<div class="testimonials">
+<article class="quote"><div class="stars">★★★★★</div><p>“Rajeev has been working for me on various development projects. Starting with a large Magento ecommerce website performance optimalisation, to our dedicated Magento developer. At the moment Rajeev is delivering breakthrough progress in a large content database project. We are very happy with his work.”</p><div class="person"><b>Erik Louwerens</b><span class="role">Magento Development</span><span>Founder & CEO of BetterCareMarket</span></div></article>
+<article class="quote"><div class="stars">★★★★★</div><p>“Highly professional and absolutely skilled. Delivery on time and smooth running of the project. Easily available to address the issues.”</p><div class="person"><b>Vipin</b><span class="role">Shopify Website Development</span><span>Sturdy Sports</span></div></article>
+<article class="quote"><div class="stars">★★★★★</div><p>“A great piece of work! Rajeev worked endlessly on it to make it perfect. He delivered on time and in impressive quality. Will definitely work with him again.”</p><div class="person"><b>Tiffany Brackens</b><span class="role">WordPress Site Customisation</span><span>TBVA</span></div></article>
+</div></div></section>
+
+<section id="contact"><div class="container"><div class="contact">
+<div><div class="kicker">05 — Contact</div><h2>Have a project?<br><span class="gradient">Let’s build it.</span></h2><p>Looking for a reliable developer for a new website, eCommerce project, API integration, optimization or ongoing support? Let’s talk.</p></div>
+<div class="contact-list">
+<div class="contact-item"><small>Email</small><a href="mailto:developeracscoders@gmail.com">developeracscoders@gmail.com</a></div>
+<div class="contact-item"><small>Phone</small><a href="tel:+918218545439">+91 82185 45439</a></div>
+<div class="contact-item"><small>WhatsApp</small><a href="https://wa.me/918218545439" target="_blank">Chat on WhatsApp ↗</a></div>
+<div class="contact-item"><small>LinkedIn</small><a href="https://www.linkedin.com/in/webdeveloperrajeev/" target="_blank">linkedin.com/in/webdeveloperrajeev ↗</a></div>
+</div></div></div></section>
+
+<footer><div class="container" style="display:flex;justify-content:space-between;width:92%;max-width:1180px;margin:auto"><span>© 2026 Rajeev Pujari. All rights reserved.</span><span>Full-Stack Web Developer</span></div></footer>
+</body>
+</html>
